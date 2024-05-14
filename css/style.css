@@ -1,0 +1,646 @@
+/*.titulo{
+    background-color: rgb(255, 96, 122);
+    rgb(255, 255, 255);
+}*/
+@font-face {
+    /*nombre para relacionar la tipo y aplicarla*/
+    font-family: "gloriola";
+    src: url("../assets/gloriola/Gloriola-Regular.otf");
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    /*header y menu*/
+    header {
+        background-color: rgb(255, 109, 134)
+    }
+}
+
+header ul li {
+    display: flex;
+    display: inline-block;
+    background-color: rgb(255, 109, 134);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    margin: 0px 5px;
+    align-items: center;
+    align-content: center;
+}
+
+header ul li {
+    display: flex;
+    display: inline-block;
+    background-color: rgb(255, 109, 134);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    margin: 0px 5px;
+}
+
+header ul li:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+
+header ul li:active {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(255, 109, 134);
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-hover-color: rgb(255, 109, 134);
+}
+.fondoOffcanvas{
+    background-color: rgb(255, 109, 134);
+}
+
+.sombra{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5)
+}
+.degradado {
+    background: linear-gradient(to bottom, rgb(255, 109, 134), rgb(253, 62, 94));
+}
+
+
+.position-sticky {
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+    /*por ensima de otros elementos*/
+}
+
+.menu-conteiner {
+    width: 100%;
+    background-color: rgb(255, 109, 134);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    margin-right: 50px;
+    justify-content: flex-end;
+}
+
+header a {
+    background-color: rgb(255, 109, 134);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+}
+
+h1 {
+    background-color: rgb(255, 109, 134);
+    font-size: 100px;
+    color: white;
+    text-decoration: none;
+    margin: 40px;
+    font-family: "gloriola";
+    font-weight: bolder;
+}
+
+/**fin nav bar**/
+
+.metodo {
+    color: white;
+    font-family: "gloriola";
+}
+
+.encabezado {
+    background-color: rgb(255, 109, 134);
+    color: white;
+}
+
+.encabezadoMetodo {
+    display: flex;
+    background-color: rgb(255, 109, 134);
+    color: white;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.encabezadoDestacado {
+    display: flex;
+    background-color: rgb(255, 109, 134);
+    color: white;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+        
+}
+
+.encabezadoProducto {
+    display: flex;
+    background-color: rgb(255, 109, 134);
+    color: white;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.indexTexto {
+    padding: 30px;
+}
+
+p {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    margin: 30px;
+
+}
+
+.potesSilueta {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+.tipoOndas {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+.potesContenedor {
+    display: flex;
+    background-color: rgb(9, 30, 219);
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.potes {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+}
+
+.rulosContenedor {
+    display: flex;
+    background-color: rgb(9, 30, 219);
+    color: white;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.rulos {
+    display: grid;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (3, 1fr);
+    grid-template-areas:
+        "rulos1 rulos2 rulos3"
+        "txt1 txt2 txt3";
+    align-items: start;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+}
+
+.txt1 {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.txtOndas {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    /*margin: 30px;
+    padding-left: 40px;*/
+}
+
+.potesProductos {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+
+.pelosContenedor {
+    display: flex;
+    background-color: rgb(9, 219, 44);
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pelos {
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metodo {
+    color: white;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+/*footer {
+    display: flex;
+    background-color: rgb(255, 109, 134);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    align-items: flex-start;
+
+    margin-top: 10px;
+    padding: 10px;
+
+    justify-content: space-around;  
+       
+}*/
+
+footer {
+    background-color: rgb(255, 109, 134);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.foot {
+    display: grid;
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "ul form rs";
+    align-items: start;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+}
+
+footer ul {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+}
+
+.rs {
+    height: 50px;
+}
+
+
+.skala {
+    align-self: center;
+}
+
+.comprar {
+    color: rgb(255, 109, 134);
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    text-align: center;
+}
+
+.skalaPromo {
+    width: 300px;
+}
+
+.comprar {
+    color: pink;
+    text-decoration: none;
+}
+
+
+/*grid videos*/
+.multimedia {
+    display: grid;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (2, 1fr);
+    grid-template-areas:
+        "video1 video2"
+        "video3 video4";
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+/*grid productos*/
+.productos {
+    display: grid;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: (3, 1fr);
+    grid-template-areas:
+        "skala1 skala2 skala3 skala4"
+        "skala5 skala6 skala7 skala8"
+        "skala9 skala10 skala11 skala12";
+}
+
+.skala {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.productosDetalle {
+    display: grid;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: 200px 10fr;
+    grid-template-rows: (10, 1fr);
+    grid-template-areas:
+        "skala1 txt1"
+        "skala1 txt2"
+        "skala1 txt3"
+        "skala1 txt4"
+        "skala1 txt5"
+        "skala1 txt6"
+        "skala1 txt7"
+        "skala1 txt8"
+        "skala1 txt9"
+        "skala1 txt10";
+}
+
+.skala1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 30, 219);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.txt1 {
+    background-color: rgb(9, 30, 219);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.txt1 p {
+    background-color: rgb(9, 30, 219);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.potesSkala2 {
+    height: 200px;
+}
+
+.potesSkala {
+    height: 200px;
+}
+
+.productosCompras {
+    display: grid;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: (5, 1fr);
+    grid-template-rows: (2, 100px);
+    grid-template-areas:
+        "skala1 skala2 skala3 skala4 skala5"
+        "skala6 skala7 skala8 scala9 skala10";
+}
+
+
+.ofertasSkala {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px
+}
+
+.potesSkalac {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.tarjeta {
+    width: 200px;
+    border: 1px solid rgb(108, 100, 100);
+    border-radius: 15px;
+    background-color: rgb(255, 109, 134);
+    color: white;
+    text-align: center;
+}
+
+.ofertasSkalap {
+    padding: 2px;
+}
+
+.tarjetaSkala {
+    width: 100%;
+}
+
+.comprar {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    align-content: center;
+    align-self: center;
+}
+
+.liquidación {
+    background-color: rgb(79, 37, 175);
+    position: relative;
+
+}
+
+.oferta {
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: red;
+    color: yellow;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 50px;
+    right: -20px;
+}
+
+
+/**/
+.position-absolute {
+    position: absolute;
+
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+/* media queries */
+/* TABLET */
+@media screen and (max-width: 1024px) {
+
+    .encabezadoMetodo {
+        display: flex;
+        background-color: rgb(255, 109, 134);
+        color: white;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: space-around;
+    }
+    .multimedia {
+
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: (4, 1fr);
+        grid-template-areas:
+            "video1"
+            "video2"
+            "video3"
+            "video4";
+    }
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    .productos {
+
+        grid-template-columns: (3, 1fr);
+        grid-template-rows: (4, 1fr);
+        grid-template-areas:
+            "skala1 skala2 skala3"
+            "skala4 skala5 skala6"
+            "skala7 skala9 skala9"
+            "skala10 skala11 skala12";
+    }
+
+    .multimedia {
+
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: (4, 1fr);
+        grid-template-areas:
+            "video1"
+            "video2"
+            "video3"
+            "video4";
+    }
+
+    .encabezadoMetodo {
+        display: flex;
+        background-color: rgb(255, 109, 134);
+        color: white;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: space-around;
+    }
+/*
+    order: 3;*/
+    
+
+}
