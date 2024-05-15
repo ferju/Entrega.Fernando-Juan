@@ -14,14 +14,14 @@
 
     /*header y menu*/
     header {
-        background-color: rgb(255, 109, 134)
+        background-color: rgb(213, 0, 124)
     }
 }
 
 header ul li {
     display: flex;
     display: inline-block;
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
     text-decoration: none;
     list-style-type: none;
@@ -34,7 +34,7 @@ header ul li {
 header ul li {
     display: flex;
     display: inline-block;
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
     text-decoration: none;
     list-style-type: none;
@@ -54,7 +54,7 @@ header ul li:active {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: rgb(255, 109, 134);
+    color: rgb(213, 0, 124);
 }
 
 .nav-link {
@@ -64,10 +64,10 @@ header ul li:active {
 .navbar-nav {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-hover-color: rgb(255, 109, 134);
+    --bs-nav-link-hover-color: rgb(213, 0, 124);
 }
 .fondoOffcanvas{
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
 }
 
 .sombra{
@@ -87,7 +87,7 @@ header ul li:active {
 
 .menu-conteiner {
     width: 100%;
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -104,7 +104,7 @@ header ul li:active {
 }
 
 header a {
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
     text-decoration: none;
     list-style-type: none;
@@ -112,7 +112,7 @@ header a {
 }
 
 h1 {
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     font-size: 100px;
     color: white;
     text-decoration: none;
@@ -128,14 +128,26 @@ h1 {
     font-family: "gloriola";
 }
 
+.logoIndex{
+    height: 200px;
+}
+
+.logomenu{
+    height: 50px;
+}
+
+.encabezadoIndex {
+    width: 500px;
+}
+
 .encabezado {
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
 }
 
 .encabezadoMetodo {
     display: flex;
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
     flex-direction: row;
     align-content: space-around;
@@ -145,17 +157,17 @@ h1 {
 
 .encabezadoDestacado {
     display: flex;
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
     flex-direction: row;
     align-content: space-around;
     align-items: center;
-        
+    flex-wrap: wrap;
 }
 
 .encabezadoProducto {
     display: flex;
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
     flex-direction: row;
     align-content: space-around;
@@ -315,7 +327,7 @@ p {
 }*/
 
 footer {
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
     text-decoration: none;
     list-style-type: none;
@@ -364,16 +376,17 @@ footer ul {
 }
 
 .comprar {
-    color: rgb(255, 109, 134);
+    color: rgb(213, 0, 124);
     text-decoration: none;
     list-style-type: none;
     font-family: "gloriola";
     text-align: center;
 }
-
+/*
 .skalaPromo {
     width: 300px;
 }
+*/
 
 .comprar {
     color: pink;
@@ -516,7 +529,7 @@ footer ul {
     width: 200px;
     border: 1px solid rgb(108, 100, 100);
     border-radius: 15px;
-    background-color: rgb(255, 109, 134);
+    background-color: rgb(213, 0, 124);
     color: white;
     text-align: center;
 }
@@ -580,7 +593,7 @@ footer ul {
 
     .encabezadoMetodo {
         display: flex;
-        background-color: rgb(255, 109, 134);
+        background-color: rgb(213, 0, 124);
         color: white;
         flex-direction: row;
         flex-wrap: wrap;
@@ -598,6 +611,25 @@ footer ul {
             "video2"
             "video3"
             "video4";
+    }
+    .encabezadoDestacado {
+        display: flex;
+        background-color: rgb(213, 0, 124);
+        color: white;
+        flex-direction: column-reverse;
+        align-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logoIndex{
+        height: 200px;
+        order: 1;
+    }
+    .encabezadoIndex {
+        width: 500px;
+        order: 2;
     }
 }
 
@@ -630,7 +662,7 @@ footer ul {
 
     .encabezadoMetodo {
         display: flex;
-        background-color: rgb(255, 109, 134);
+        background-color: rgb(213, 0, 124   );
         color: white;
         flex-direction: row;
         flex-wrap: wrap;
@@ -638,6 +670,26 @@ footer ul {
         align-items: center;
         margin-bottom: 10px;
         justify-content: space-around;
+    }
+
+    .encabezadoDestacado {
+        display: flex;
+        background-color: rgb(213, 0, 124);
+        color: white;
+        flex-direction: column-reverse;
+        align-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logoIndex{
+        height: 200px;
+        order: 1;
+    }
+    .encabezadoIndex {
+        width: 500px;
+        order: 2;
     }
 /*
     order: 3;*/
