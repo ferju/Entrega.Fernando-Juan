@@ -66,13 +66,15 @@ header ul li:active {
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-hover-color: rgb(213, 0, 124);
 }
-.fondoOffcanvas{
+
+.fondoOffcanvas {
     background-color: rgb(213, 0, 124);
 }
 
-.sombra{
+.sombra {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5)
 }
+
 .degradado {
     background: linear-gradient(to bottom, rgb(255, 109, 134), rgb(253, 62, 94));
 }
@@ -128,11 +130,11 @@ h1 {
     font-family: "gloriola";
 }
 
-.logoIndex{
+.logoIndex {
     height: 200px;
 }
 
-.logomenu{
+.logomenu {
     height: 50px;
 }
 
@@ -156,13 +158,16 @@ h1 {
 }
 
 .encabezadoDestacado {
-    display: flex;
+    display: grid;
     background-color: rgb(213, 0, 124);
     color: white;
     flex-direction: row;
     align-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    grid-template-areas:
+        "video1 video2"
+        "video3 video4";
 }
 
 .encabezadoProducto {
@@ -243,7 +248,7 @@ p {
     grid-template-rows: (3, 1fr);
     grid-template-areas:
         "rulos1 rulos2 rulos3"
-        "txt1 txt2 txt3";
+        "txtm1 txtm2 txtm3";
     align-items: start;
     justify-content: space-between;
     align-content: center;
@@ -306,27 +311,8 @@ p {
     margin: 20px 0px;
 }
 
-/*footer {
-    display: flex;
-    background-color: rgb(255, 109, 134);
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: "gloriola";
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
-    align-items: flex-start;
-
-    margin-top: 10px;
-    padding: 10px;
-
-    justify-content: space-around;  
-       
-}*/
-
 footer {
+    display: flex;
     background-color: rgb(213, 0, 124);
     color: white;
     text-decoration: none;
@@ -338,14 +324,10 @@ footer {
 }
 
 .foot {
-    display: grid;
+    display: flex;
     padding: 15px;
     width: 100%;
     margin: 0 auto;
-    grid-template-columns: (3, 1fr);
-    grid-template-rows: 100%;
-    grid-template-areas:
-        "ul form rs";
     align-items: start;
     justify-content: space-between;
     align-content: center;
@@ -382,6 +364,7 @@ footer ul {
     font-family: "gloriola";
     text-align: center;
 }
+
 /*
 .skalaPromo {
     width: 300px;
@@ -446,16 +429,16 @@ footer ul {
     grid-template-columns: 200px 10fr;
     grid-template-rows: (10, 1fr);
     grid-template-areas:
-        "skala1 txt1"
-        "skala1 txt2"
-        "skala1 txt3"
         "skala1 txt4"
-        "skala1 txt5"
-        "skala1 txt6"
-        "skala1 txt7"
-        "skala1 txt8"
-        "skala1 txt9"
-        "skala1 txt10";
+        "skala2 txt5"
+        "skala3 txt6"
+        "skala4 txt7"
+        "skala5 txt8"
+        "skala6 txt9"
+        "skala7 txt10"
+        "skala8 txt11"
+        "skala9 txt12"
+        "skala10 txt13";
 }
 
 .skala1 {
@@ -602,8 +585,10 @@ footer ul {
         margin-bottom: 10px;
         justify-content: space-around;
     }
-    .multimedia {
 
+    .multimedia {
+        display: grid;
+        width: 80vw;
         grid-template-columns: (1, 1fr);
         grid-template-rows: (4, 1fr);
         grid-template-areas:
@@ -611,7 +596,9 @@ footer ul {
             "video2"
             "video3"
             "video4";
+        justify-content: center;
     }
+
     .encabezadoDestacado {
         display: flex;
         background-color: rgb(213, 0, 124);
@@ -623,10 +610,11 @@ footer ul {
         justify-content: center;
     }
 
-    .logoIndex{
+    .logoIndex {
         height: 200px;
         order: 1;
     }
+
     .encabezadoIndex {
         width: 500px;
         order: 2;
@@ -639,18 +627,87 @@ footer ul {
 @media screen and (max-width: 768px) {
 
     .productos {
-
-        grid-template-columns: (3, 1fr);
-        grid-template-rows: (4, 1fr);
+        display: grid;
+        padding: 15px;
+        width: 80vw;
+        margin: 0 auto;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: (10, 1fr);
         grid-template-areas:
-            "skala1 skala2 skala3"
-            "skala4 skala5 skala6"
-            "skala7 skala9 skala9"
-            "skala10 skala11 skala12";
+        "skala1 skala2"
+        "skala3 skala4"
+        "skala5 skala6"
+        "skala7 skala8"
+        "skala9 skala10"
+        "skala11 skala12";
+        align-content: space-evenly;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .productosDetalle {
+        display: grid;
+        padding: 15px;
+        width: 80vw;
+        margin: 0 auto;
+        grid-template-columns: 200px 10fr;
+        grid-template-rows: (10, 1fr);
+        grid-template-areas:
+            "skala1 txt1"
+            "skala2 txt2"
+            "skala3 txt3"
+            "skala4 txt4"
+            "skala5 txt5"
+            "skala6 txt6"
+            "skala7 txt7"
+            "skala8 txt8"
+            "skala9 txt9"
+            "skala10 txt10";
+    }
+
+    .rulos {
+        display: grid;
+        padding: 15px;
+        width: 80vw;
+        margin: 0 auto;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: (3, 1fr);
+        grid-template-areas:
+            "rulos1 txtm1"
+            "rulos2 txtm2"
+            "rulos3 txtm3";
+        align-items: start;
+        justify-content: space-between;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .rulos1 {
+        grid-area: rulos1;
+    }
+
+    .rulos2 {
+        grid-area: rulos2;
+    }
+
+    .rulos3 {
+        grid-area: rulos3;
+    }
+
+    .txtm1 {
+        grid-area: txtm1;
+    }
+
+    .txtm2 {
+        grid-area: txtm2;
+    }
+
+    .txtm3 {
+        grid-area: txtm3;
     }
 
     .multimedia {
-
+        display: grid;
         grid-template-columns: (1, 1fr);
         grid-template-rows: (4, 1fr);
         grid-template-areas:
@@ -662,7 +719,7 @@ footer ul {
 
     .encabezadoMetodo {
         display: flex;
-        background-color: rgb(213, 0, 124   );
+        background-color: rgb(213, 0, 124);
         color: white;
         flex-direction: row;
         flex-wrap: wrap;
@@ -683,16 +740,79 @@ footer ul {
         justify-content: center;
     }
 
-    .logoIndex{
-        height: 200px;
+    .logoIndex {
+        width: 350px;
         order: 1;
     }
+
     .encabezadoIndex {
-        width: 500px;
+        width: 350px;
         order: 2;
     }
-/*
+
+    footer {
+        display: flex;
+        background-color: rgb(213, 0, 124);
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: "gloriola";
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .foot {
+        display: flex;
+        padding: 15px;
+        width: 100%;
+        margin: 0 auto;
+        align-items: flex-start;
+        align-content: space-around;
+        justify-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: "gloriola";
+    }
+
+    footer ul {
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: "gloriola";
+    }
+
+    .rs {
+        height: 50px;
+    }
+
+    .potes {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        place-content: space-between;
+        align-items: center;
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .pelos {
+        display: flex;
+        width: 50vw;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*
     order: 3;*/
-    
+
 
 }
