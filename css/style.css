@@ -352,6 +352,10 @@ footer ul {
     height: 50px;
 }
 
+.rrSs {
+    margin-top: 15px;
+}
+
 
 .skala {
     align-self: center;
@@ -634,12 +638,12 @@ footer ul {
         grid-template-columns: (2, 1fr);
         grid-template-rows: (10, 1fr);
         grid-template-areas:
-        "skala1 skala2"
-        "skala3 skala4"
-        "skala5 skala6"
-        "skala7 skala8"
-        "skala9 skala10"
-        "skala11 skala12";
+            "skala1 skala2"
+            "skala3 skala4"
+            "skala5 skala6"
+            "skala7 skala8"
+            "skala9 skala10"
+            "skala11 skala12";
         align-content: space-evenly;
         justify-content: center;
         align-items: start;
@@ -663,6 +667,8 @@ footer ul {
             "skala8 txt8"
             "skala9 txt9"
             "skala10 txt10";
+        justify-content: center;
+        align-content: center;
     }
 
     .rulos {
@@ -673,9 +679,9 @@ footer ul {
         grid-template-columns: (2, 1fr);
         grid-template-rows: (3, 1fr);
         grid-template-areas:
-            "rulos1 txtm1"
-            "rulos2 txtm2"
-            "rulos3 txtm3";
+            "rulos1" "txtm1"
+            "rulos2" "txtm2"
+            "rulos3" "txtm3";
         align-items: start;
         justify-content: space-between;
         align-content: center;
@@ -708,13 +714,23 @@ footer ul {
 
     .multimedia {
         display: grid;
+        width: 100%;
         grid-template-columns: (1, 1fr);
         grid-template-rows: (4, 1fr);
+        justify-items: center;
         grid-template-areas:
             "video1"
             "video2"
             "video3"
             "video4";
+    }
+
+    .video {
+        display: flex;
+        width: 320px;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
     }
 
     .encabezadoMetodo {
@@ -797,9 +813,10 @@ footer ul {
         text-align: center;
         flex-wrap: wrap;
         place-content: space-between;
-        align-items: center;
         width: 50vw;
         justify-content: center;
+        flex-direction: column;
+        align-content: center;
     }
 
     .pelos {
@@ -808,7 +825,8 @@ footer ul {
         flex-wrap: wrap;
         align-content: space-between;
         justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        align-content: center;
     }
 
     /*
