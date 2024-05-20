@@ -53,6 +53,7 @@ header ul li:active {
 
 .nav-link {
     color: white;
+    padding-left: 10px;
 }
 
 .navbar-nav {
